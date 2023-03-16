@@ -1,5 +1,8 @@
 #!/bin/bash
 
+dir=$(find /root/bash_scripting-1 -type d -name $1)
+cd $dir; pwd
+
 ## get latest
 git pull
 
@@ -12,4 +15,4 @@ git commit -m $1
 ## push files to github
 git push -u origin main
 
-## testing new lines
+# ## testing new lines
