@@ -1,0 +1,4 @@
+#!/bin/bash
+
+dir=$(find / -type d -name $1)
+cd $dir; pwd
